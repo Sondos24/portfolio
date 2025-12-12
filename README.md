@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Contact form (Formspree)
+
+The contact form uses Formspree—no backend needed.
+
+1) Create a new Formspree form and copy the endpoint (looks like `https://formspree.io/f/xxxxxxx`).
+2) Add it to `.env.local` in the project root (same level as `package.json`):  
+   `NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/xxxxxxx`
+3) Restart `npm run dev` so the env var is picked up.
+4) Set the same env var in your hosting provider for production.
+
+Notes:
+- Fields: name, email, subject, message (all required)
+- Client-side validation + email format check
+- Honeypot `_gotcha` for basic spam protection
+- Success/error messages with form reset on success
+

@@ -15,9 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = "https://sondosalqaisi.dev";
-const title = "Sondos Alqaisi | XR & AI Developer | Unreal Engine Specialist";
+const title =
+  "Sondos Alqaisi | AI & XR Engineer | Unreal Engine · Computer Vision";
 const description =
-  "Sondos Alqaisi is an XR, AI, and Unreal Engine specialist crafting immersive experiences, Meta Quest builds, and AI-driven game systems for clients and freelance platforms.";
+  "Sondos Alqaisi is an AI and XR engineer specializing in Unreal Engine, Unity, computer vision, deep learning, and AI agent systems. Building intelligent immersive experiences across gaming, healthcare, and engineering.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -25,15 +26,30 @@ export const metadata: Metadata = {
   description,
   keywords: [
     "Sondos Alqaisi",
+    "AI engineer",
     "XR developer",
-    "AI developer",
-    "Unreal Engine specialist",
-    "Meta Quest",
-    "Mixed Reality",
+    "VR developer",
+    "Unreal Engine developer",
+    "Unity developer",
+    "Computer vision",
+    "Deep learning",
+    "Machine learning",
+    "AI agents",
+    "LangChain",
+    "OpenCV",
+    "YOLO",
+    "MediaPipe",
+    "Mixed reality",
     "Game development",
-    "Freelance XR",
-    "Remote XR developer",
+    "Medical simulation",
+    "Python developer",
+    "C# developer",
+    "Firebase",
+    "Freelance AI developer",
+    "Jordan AI developer",
   ],
+  authors: [{ name: "Sondos Alqaisi" }],
+  creator: "Sondos Alqaisi",
   alternates: { canonical: "/" },
   openGraph: {
     title,
@@ -41,12 +57,13 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Sondos Alqaisi Portfolio",
     type: "website",
+    locale: "en_US",
     images: [
       {
         url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Sondos Alqaisi | XR & AI Developer",
+        alt: "Sondos Alqaisi | AI & XR Engineer Portfolio",
       },
     ],
   },
@@ -73,23 +90,38 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Sondos Alqaisi",
-  jobTitle: "XR & AI Developer | Unreal Engine Specialist",
+  jobTitle: "AI & XR Engineer",
   url: siteUrl,
+  email: "sondosalqaisi323@gmail.com",
   image: `${siteUrl}/og-image.png`,
   sameAs: [
     "https://github.com/Sondos24",
     "https://www.linkedin.com/in/sondos-alqaisi-091a442bb",
   ],
+  alumniOf: [
+    {
+      "@type": "CollegeOrUniversity",
+      name: "Al-Zarqa University",
+    },
+  ],
   knowsAbout: [
-    "XR",
-    "Mixed Reality",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Computer Vision",
+    "Deep Learning",
     "Unreal Engine",
-    "Meta Quest",
-    "AI systems",
-    "Game development",
+    "Unity",
+    "XR",
+    "VR",
+    "Mixed Reality",
+    "AI Agents",
+    "LangChain",
     "Python",
-    "C++",
-    "Blender",
+    "C#",
+    "OpenCV",
+    "YOLO",
+    "Firebase",
+    "Game Development",
   ],
   description,
 };
